@@ -1,0 +1,47 @@
+.container {
+    background-color: rgb(10, 10, 10);
+    display: grid;
+    width: 70vw;
+    height: 100vh;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.anime-card {
+    display: inline-block;
+    border-radius: 10px 10px;
+    background-color: rgb(0, 0, 0);
+    margin: 1em;
+}
+
+.anime-card-title {
+    color: white;
+    text-align: center;
+    font-size: large;
+}
+
+.anime-card-image {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.anime-card-button{
+    display: flex;
+    justify-content: center;
+}
+
+.anime-card-button button{
+    border: none;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.8em;
+    height: 2em;
+    width: 5em;
+    
+}
+
+.anime-card-button button:hover{
+    background-color: rgb(126, 0, 0);
+}
