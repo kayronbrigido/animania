@@ -1,0 +1,38 @@
+.anime-container {
+    display: grid;
+    width: 60vw;
+    color: white;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.anime-container img{
+    width: 40vw;
+    margin-bottom: 0px;
+}
+
+.anime-container h1, p{
+    margin: 5px 0px 5px 0px;
+}
+
+.anime-container-button button{
+    display: flexbox;
+    border: none;
+    border-radius: 10px;
+    height: 3em;
+    margin-right: 5em;
+    margin-left: 5em;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.anime-container-button a{
+    text-decoration: none;
+    color: black;
+}
+
+.anime-container-button button:hover{
+    background-color: rgb(100, 0, 0);
+    color: white;
+}

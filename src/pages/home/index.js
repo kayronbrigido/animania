@@ -1,5 +1,5 @@
 import './home-style.css';
-import { useEffect, useState } from "react";
+import { useEffect, useState, } from "react";
 import api from '../../services/api';
 
 export default function Home() {
@@ -28,8 +28,9 @@ export default function Home() {
                             <div className="anime-card-title">{anime.nome}</div>
                             <div className="anime-card-image"><img src={`https://kayronwesley.github.io/Api/` + anime.imagem} alt={anime.nome}/></div>
                             <div className="anime-card-button">
-                            <button>Salvar</button>
-                            <button>Ver</button>
+                                <button>
+                                    <a href={`/anime/${anime.id}`}>Ver</a>
+                                </button>
                             </div>
                         </div>
                     )

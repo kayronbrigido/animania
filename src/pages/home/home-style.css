@@ -31,6 +31,11 @@
     justify-content: center;
 }
 
+.anime-card-button a{
+    text-decoration: none;
+    color: black;
+}
+
 .anime-card-button button{
     border: none;
     border-radius: 10px;
@@ -39,7 +44,7 @@
     margin-bottom: 0.8em;
     height: 2em;
     width: 5em;
-    
+    cursor: pointer;
 }
 
 .anime-card-button button:hover{
