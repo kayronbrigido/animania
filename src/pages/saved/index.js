@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import './page-saved-style.css';
 
 
@@ -38,6 +39,7 @@ function Saved(){
 
         setAnime(animeFilter);
         localStorage.setItem('animes', JSON.stringify(animeFilter));
+        toast.success('Excluído com Sucesso!')
     }
 
 
@@ -49,6 +51,7 @@ function Saved(){
         <div className="saved-animes">
             <h1>Animes Salvos</h1>
             <span id="total-saved">Total Salvo: {animes.length}</span>
+            { animes.length === 0 && <span>Nenhum anime Salvo</span>}
             <ul>
                {animes.map((anime) => {
 

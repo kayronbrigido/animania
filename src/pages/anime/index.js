@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import { toast } from 'react-toastify';
 import api from '../../services/api';
 import './page-anime-style.css';
 
@@ -37,13 +38,13 @@ function Anime(){
             
                 // if anime was in localStorage, it cant be add again
                 if (hasAnime){
-                    alert('Esse anime já esta salvo!');
+                    toast.info('Esse anime já esta salvo!');
                     return;
                 }
         
                 savedAnimes.push(anime)
                 localStorage.setItem('animes', JSON.stringify(savedAnimes));
-                alert('Anime salvo com sucesso!')
+                toast.success('Anime salvo com sucesso!')
             
             }
             
@@ -65,6 +66,17 @@ function Anime(){
                     </div>
                 </div>
                 )}
+
+            else if(animes.length < parseInt(id)){
+                return(
+                        window.location.replace('/')
+                        /* This is just if the api use a incremental list
+                        * example if i have id 1, 2, 3, 4, 5, 6 the length will be right
+                        * but if a have 1, 2, 4, 5, 6, dont will work right, cuz the
+                        * length is 5 and dont will show the anime with id 6
+                        */                    
+                )
+            }
             
             else {
                 return (
