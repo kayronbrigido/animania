@@ -1,0 +1,36 @@
+.saved-animes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+ul{
+    margin: 0px;
+    min-width: 400px;
+}
+
+ul li {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+li a{
+    text-decoration: none;
+    color: red;
+    margin-right: 1em;
+}
+
+.anime-name{
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 1em;
+    margin-left: -0.8em;
+}
+
+#total-saved {
+    min-width: 400px;
+    margin-bottom: 1em;
+}

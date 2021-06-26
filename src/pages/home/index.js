@@ -19,6 +19,9 @@ export default function Home() {
         loadAnime();
     }, [])
 
+    /* Will render all animes in cards with name, image and one button
+    * the button should redirect the user to the anime details
+    */
     return(
         <div className="container">
             <div className="anime-list">
